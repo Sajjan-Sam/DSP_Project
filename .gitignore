@@ -40,3 +40,21 @@ logs/
 *.pdf
 *.docx
 *.odt
+
+# --- local envs / caches ---
+myenv/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- big/local artifacts (you can add specific ones later if needed) ---
+data/
+predictions/
+results/
+figures/
+models/
+checkpoints/
+logs/
+*.log

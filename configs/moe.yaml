@@ -1,0 +1,28 @@
+# regime-aware Mixture-of-Experts (MoE)
+random_seed: 42
+val_split_name: "val"     # how you labelled your OOF/VAL window
+test_split_name: "test"
+
+# files your pipeline already saves (adjust names if different)
+paths:
+  base_preds_dir: "predictions"        # contains prophet_val.npy, lstm_val.npy, etc.
+  meta_features_csv: "data/meta_features.csv"  # hour, irradiance, temp, regime, etc. by timestamp
+  y_val_csv: "data/y_val.csv"          # columns: timestamp,y
+  y_test_csv: "data/y_test.csv"        # columns: timestamp,y
+  capacity_info_csv: "data/plant_caps.csv"     # columns: timestamp, theoretical_irradiance, plant_capacity
+
+training:
+  epochs: 80
+  batch_size: 256
+  lr: 1.5e-3
+  weight_decay: 1.0e-4
+  early_stop_patience: 10
+
+model:
+  hidden: 64
+  dropout: 0.10
+
+save:
+  model_path: "models/moe_gate.pt"
+  pred_out_npz: "predictions/ensemble_moe.npz"   # will contain val/test preds
+  metrics_csv: "results/ensemble_results.csv"    # appended
