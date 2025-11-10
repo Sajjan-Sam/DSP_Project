@@ -1,3 +1,16 @@
+# data/
+# predictions/
+# results/
+# figures/
+# models/
+# checkpoints/
+# logs/
+# *.npy
+# *.npz
+# *.pt
+# *.pkl
+# *.parquet
+# *.h5
 # Python
 __pycache__/
 *.pyc
