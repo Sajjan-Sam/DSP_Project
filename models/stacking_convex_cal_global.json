@@ -1,0 +1,15 @@
+{
+  "mode": "global",
+  "experts": [
+    "pred_prophet_cal",
+    "pred_lstm_cal",
+    "pred_qrf_cal",
+    "pred_sarima_cal"
+  ],
+  "weights": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+  ]
+}

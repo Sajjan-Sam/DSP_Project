@@ -1,0 +1,17 @@
+{
+  "mode": "by_regime",
+  "experts": [
+    "pred_prophet_cal",
+    "pred_lstm_cal",
+    "pred_qrf_cal",
+    "pred_sarima_cal"
+  ],
+  "weights_by_regime": {
+    "0": [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ]
+  }
+}

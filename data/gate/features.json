@@ -1,0 +1,1 @@
+{"features": ["pred_prophet", "pred_lstm", "pred_qrf", "pred_sarima", "hour_sin", "hour_cos", "irradiance", "ambient_temp", "regime"], "experts": ["prophet", "lstm", "qrf", "sarima"]}
