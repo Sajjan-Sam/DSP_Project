@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Data & artifacts (keep repo lean)
+data/
+predictions/
+results/
+figures/
+models/
+checkpoints/
+logs/
+*.log
+
+# Large binaries (LFS will track but we generally ignore transient dirs)
+*.npy
+*.npz
+*.pt
+*.pkl
+*.parquet
+*.onnx
+*.h5
+*.ckpt
+*.bin
+*.jpg
+*.png
+*.pdf
+*.docx
+*.odt
